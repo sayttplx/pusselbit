@@ -37,6 +37,7 @@ export const StyledGameStatus = styled.div`
   display: grid;
   place-items: center;
   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   margin: min(0.375rem, 1vw);
   border-radius: min(5px, 1vw);
   overflow: hidden;
