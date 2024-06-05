@@ -1,11 +1,24 @@
+import React from "react";
+import GlobalStyle from "./styles/GlobalStyle";
+import Board from "./components/Board/Board";
+import { styled } from "styled-components";
 
+const StyledMain = styled.main`
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 2rem;
+`;
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      yo
-    </div>
+    <>
+      <GlobalStyle />
+      <StyledMain>
+        <Board />
+      </StyledMain>
+    </>
   );
-}
+};
 
 export default App;
